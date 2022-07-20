@@ -14,6 +14,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
     </style>
+    
 <title>Weather Dash</title>
 
 </head>
@@ -35,16 +36,10 @@
     <div class="searchBox row sticky col-sm-2 col-md-2 col-lg-3 m-1 pt-4">
             <label class="citysearch" for="city" id="inputCity">Search for a City</label>
 
-        <div id="citysearch" class="input-group mb-3">
+        <div id="citySearch" class="input-group mb-3">
         
             <input type="text" class="form-control" list="datalistOptions" id="enterCity" placeholder="Enter City" aria-describedby="citySearchBtn">
-                <datalist id="datalistOptions">
-                    <option value="San Francisco">
-                    <option value="New York">
-                    <option value="Seattle">
-                    <option value="Los Angeles">
-                    <option value="Chicago">
-                </datalist>
+                
                 <div class="input-group-append">
                     <button class="btn btn-success btn-lg" type="button" id="citySearchBtn"><i class="fa-solid fa-eye"></i></button>
                   </div>
@@ -52,21 +47,21 @@
         
         <br>
         <p class="yourCities">Your Searched Cities</p>
-        <div class="listYourCities"></div>
+        <div class="list-group"></div>
         
     </div>
     
     <!--results from search-->
     <section class="col-sm-6 col-md-8">
-        <div id="weatherContent" class="pt-3 hide">
+        <div id="weatherContent" class="pt-3 visually-hidden">
           <div class="card w-100">
             <div class="card-body py-2">
-              <h3 class="card-title font-weight-bold mb-0"><img id="icon" alt="Weather Icon" /></h3>
+              <h3 class="card-title font-weight-bold mb-0"><img id="icon"></h3>
               <div class="card-text mt-0">
                 <p>Temperature: <span id="temp"></span></p>
                 <p>Humidity: <span id="humidity"></span></p>
                 <p>Wind Speed: <span id="windSpeed"></span></p>
-                <p>UV Index: <span id="uvIndex"></span></p>
+                <p>UV Index: <span id="uv"></span></p>
               </div>
             </div>
           </div>
@@ -76,7 +71,7 @@
     
 
         <!--forecast section-->
-    <aside id="forecast" class="container-fluid- pt-4">
+    <aside id="forecast" class="container-fluid- pt-4 ">
         <h3 id="5day" class="font-weight-bold">5-Day Forecast:</h3>
         <div class="row text-center" id="forecastRow"></div>
 
@@ -105,6 +100,8 @@
      
 
 </main>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
