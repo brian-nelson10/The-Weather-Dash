@@ -1,0 +1,42 @@
+
+
+.jumbotron {
+    background-image: url(Lightning-HD-Desktop.jpg);
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    color: navajowhite;
+}
+
+.searchBox {
+    background-color: aliceblue;
+    color: black;
+}
+
+#inputCity {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+}
+
+.yourCities {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+}
+
+p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+}
+
+.forecast-container {
+    background-color: aliceblue;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    color: black;
+}
