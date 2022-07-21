@@ -7,7 +7,7 @@
 
 .jumbotron h1 {
     font-family: 'Bangers', cursive;
-    font-size: 70px;
+    font-size: 100px;
     color: navajowhite;
 }
 
@@ -18,17 +18,17 @@
 
 #inputCity {
     font-family: 'Bebas Neue', cursive;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .yourCities {
     font-family: 'Bebas Neue', cursive;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 ul {
     font-family: 'Bangers', cursive;
-    font-size: 20px;
+    font-size: 24px;
     color: black;
     margin: 0 0 0 20px;
     padding: 0 0 30px;
@@ -36,6 +36,11 @@ ul {
 
 .card-body {
     background-color: cornflowerblue;
+}
+
+h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 19px;
 }
 
 p {

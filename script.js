@@ -190,7 +190,7 @@ var currentDate = moment().format("dddd, MMMM Do YYYY");
         for (var i = 0; i < forecastData.list.length; i++) {
             if (i % 8 === 0) {
             foreCastObject.push({
-                date: forecastData.list[i].dt_text,
+                date: forecastData.list[i].dt_txt,
                 icon: forecastData.list[i].weather[0].icon,
                 des: forecastData.list[i].weather[0].description,
                 temp: forecastData.list[i].main.temp,
