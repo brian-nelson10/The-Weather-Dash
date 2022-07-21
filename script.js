@@ -42,20 +42,16 @@ function handleSearch(event) {
     event.preventDefault();
   
     var enterCities = enterCityVal.value.trim();
-    
-    if (!enterCities) {
-      // alert empty input error to user
-      //errorMessage("You must enter a valid city name", citySearchEl, 5000);
-      //return;
-    } else {
+   
       getCurrentWeather(enterCities, apiKey);
       getForecast(enterCities, apiKey);
       enterCityVal.value = "";
       localStorage.setItem("cities", JSON.stringify(enterCities));
-    };
-  }
 
-  document.getElementById("myUL").innerHTML = JSON.parse(localStorage.getItem("cities"));
+    };
+  
+
+  document.getElementById("a").innerHTML = JSON.parse(localStorage.getItem("cities"));
 
   function getCurrentWeather(cityName, apiKey) {
     

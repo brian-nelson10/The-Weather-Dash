@@ -38,8 +38,14 @@
 
         <div id="citySearch" class="input-group mb-3">
         
-            <input type="text" id="enterCity" class="form-control" placeholder="Enter City">
-                
+            <input type="text" id="enterCity" class="form-control" list="datalistOptions" placeholder="Enter City">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
                 <div class="input-group-append">
                     <button class="btn btn-success btn-lg" type="button" id="citySearchBtn"><i class="fa-solid fa-eye"></i></button>
                   </div>
@@ -47,8 +53,8 @@
         
         <br>
         <p class="yourCities">Last Searched City:</p>
-        <ul id="myUL" class="list-group">
-
+        <ul id="myUL" class="list-group-item-action">
+          <a id="a" href="#" class="list-group-item list-group-item-action"></a>
         </ul>
         
     </div>
