@@ -34,11 +34,11 @@
     <div class="row">
     <!--city search-->
     <div class="searchBox row sticky col-sm-2 col-md-2 col-lg-3 m-1 pt-4">
-            <label class="citysearch" for="city" id="inputCity">Search for a City</label>
+            <label class="citysearch" for="city" id="inputCity">Search for a City:</label>
 
         <div id="citySearch" class="input-group mb-3">
         
-            <input type="text" class="form-control" list="datalistOptions" id="enterCity" placeholder="Enter City" aria-describedby="citySearchBtn">
+            <input type="text" id="enterCity" class="form-control" placeholder="Enter City">
                 
                 <div class="input-group-append">
                     <button class="btn btn-success btn-lg" type="button" id="citySearchBtn"><i class="fa-solid fa-eye"></i></button>
@@ -46,8 +46,10 @@
                 </div>
         
         <br>
-        <p class="yourCities">Your Searched Cities</p>
-        <div class="list-group"></div>
+        <p class="yourCities">Last Searched City:</p>
+        <ul id="myUL" class="list-group">
+
+        </ul>
         
     </div>
     
@@ -71,32 +73,65 @@
     
 
         <!--forecast section-->
-    <aside id="forecast" class="container-fluid- pt-4 ">
+    <section id="forecast" class="container-fluid pt-4 ">
         <h3 id="5day" class="font-weight-bold">5-Day Forecast:</h3>
-        <div class="row text-center" id="forecastRow"></div>
+        <div class="row" id="forecastRow">
 
         <!-- day 1 -->
         <div class="col-2">
           <div class="forecast-container text-black mb-4">
-            <h5 class="date-title font-weight-bold"></h5>
-            <img id="forecastIcon" alt="Forecast Icon">
-            <p class="font-weight-bold">Temperature: <span id="tempForecast" class="font-weight-normal"></span></p>
+            <h5 class="font-weight-bold" id="date-forecast"></h5>
+            <img id="forecastIcon"></img>
+            <p class="font-weight-bold">Forecast: <span id="descriptionSpan" class="font-weight-normal"></span></p>
+            <p class="font-weight-bold">Temperature: <span id="tempSpan" class="font-weight-normal"></span></p>
             <p class="font-weight-bold">Humidity: <span id="humidityForecast" class="font-weight-normal"></span></p>
           </div>
         </div>
-
+    
         <!-- day 2 -->
-       
+        <div class="col-2">
+            <div class="forecast-container text-black mb-4">
+              <h5 class="font-weight-bold" id="date-forecast"></h5>
+              <img id="forecastIcon"></img>
+              <p class="font-weight-bold">Forecast: <span id="descriptionSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Temperature: <span id="tempSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Humidity: <span id="humidityForecast" class="font-weight-normal"></span></p>
+            </div>
+          </div>
         <!-- day 3 -->
-        
+        <div class="col-2">
+            <div class="forecast-container text-black mb-4">
+                <h5 class="font-weight-bold" id="date-forecast"></h5>
+              <img id="forecastIcon"></img>
+              <p class="font-weight-bold">Forecast: <span id="descriptionSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Temperature: <span id="tempSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Humidity: <span id="humidityForecast" class="font-weight-normal"></span></p>
+            </div>
+          </div>
         <!-- day 4 -->
-        
+        <div class="col-2">
+            <div class="forecast-container text-black mb-4">
+                <h5 class="font-weight-bold" id="date-forecast"></h5>
+              <img id="forecastIcon"></img>
+              <p class="font-weight-bold">Forecast: <span id="descriptionSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Temperature: <span id="tempSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Humidity: <span id="humidityForecast" class="font-weight-normal"></span></p>
+            </div>
+          </div>
         <!-- day 5 -->
-        
+        <div class="col-2">
+            <div class="forecast-container text-black mb-4">
+                <h5 class="font-weight-bold" id="date-forecast"></h5>
+              <img id="forecastIcon"></img>
+              <p class="font-weight-bold">Forecast: <span id="descriptionSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Temperature: <span id="tempSpan" class="font-weight-normal"></span></p>
+              <p class="font-weight-bold">Humidity: <span id="humidityForecast" class="font-weight-normal"></span></p>
+            </div>
+          </div>
 
-        
+        </div>
 
-    </aside>
+    </section>
      
 
 </main>

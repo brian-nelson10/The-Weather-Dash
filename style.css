@@ -26,6 +26,14 @@
     font-size: 26px;
 }
 
+ul {
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    color: black;
+    margin: 0 0 0 20px;
+    padding: 0 0 30px;
+}
+
 .card-body {
     background-color: aliceblue;
 }
@@ -71,6 +79,11 @@ p {
 
 .forecast-container {
     background-color: aliceblue;
+}
+
+.date-forecast {
+    font-family: 'Bangers', cursive;
+    color: black;
 }
 
 h3 {
