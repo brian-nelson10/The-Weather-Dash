@@ -128,6 +128,7 @@ var currentDate = moment().format("dddd, MMMM Do YYYY");
           var lat = resultObj.coord.lat;
           var lon = resultObj.coord.lon;
           getUVIndex(lat, lon, apiKey);
+
         } else {
           uvIndexEl.textContent = "No UV index for this city!!";
         }
@@ -171,7 +172,7 @@ var currentDate = moment().format("dddd, MMMM Do YYYY");
   }
   // Forecast function
   function getForecast(enterCities, apiKey) {
-    var url = openWeatherQueryUrl + "forecast?q=" + enterCities + "&appid=" + apiKey;
+    var url = openWeatherQueryUrl + "forecast?q=" + enterCities + "&appid=" + apiKey + "&units=imperial";
 
     fetch(url)
         .then(function (response) {
