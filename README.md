@@ -14,7 +14,7 @@
 ### THEN I am again presented with current and future conditions for that city
 
 # Screenshot of Weather Dashboard
-![alt text](screencapture-127-0-0-1-5501-index-html-2022-07-21-17_48_32.png"screenshot")
+![](screencapture-127-0-0-1-5501-index-html-2022-07-21-17_48_32.png)
 
 # URL to Deployed Application
 https://brian-nelson10.github.io/The-Weather-Dash/
